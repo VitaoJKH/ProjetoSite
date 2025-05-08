@@ -1,0 +1,5 @@
+* {
+    box-sizing: border-box; /* Faz com que padding e border sejam incluídos na largura e altura total do elemento */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+}

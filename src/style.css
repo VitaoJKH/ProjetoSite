@@ -1,0 +1,146 @@
+body {
+     background-color: black; /* Define a cor de fundo da página como preto */
+     overflow-y: auto; /* Ativa a rolagem vertical */
+     overflow-x: hidden; /* Desativa a rolagem horizontal */
+     display: flex; /* Ativa o Flexbox no body */
+     flex-direction: column; /* Organiza os elementos filhos em coluna (um abaixo do outro) */
+     min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela inteira */
+}
+
+/* MAIN (área de conteúdo com as imagens de fundo e textos) */
+main.fundos {
+     display: flex; /* Ativa o Flexbox no main */
+     flex-direction: column; /* Organiza os elementos filhos (seções) em coluna */
+     flex: 1; /* Faz o main ocupar o espaço restante disponível no body */
+     width: 100vw; /* Ocupa 100% da largura da viewport */
+     margin: 0; /* Remove margem externa */
+     padding: 0; /* Remove padding interno */
+}
+
+.fundo-pagina1, .fundo-pagina2, .fundo-pagina3 {
+     position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+     height: 100vh; /* Ocupa 100% da altura da tela */
+     width: 100vw; /* Ocupa 100% da largura da tela */
+     margin: 0; /* Remove qualquer margem externa */
+     padding: 0; /* Remove qualquer padding interno */
+     overflow: hidden; /* Garante que nada vaze pra fora da seção */
+     display: flex; /* Ativa o Flexbox pra controlar conteúdo se quiser */
+     flex-direction: column; /* Empilha os itens dentro em coluna */
+}
+
+.video-fundo {
+     width: 100vw; /* Ocupa 100% da largura da tela */
+     height: 100vh; /* Ocupa 100% da altura da tela */
+     object-fit: cover; /* Faz o vídeo cobrir toda a área sem distorcer */
+     margin: 0; /* Remove margem externa */
+}
+
+/* Conteúdo de texto sobre as imagens */
+.conteudo {
+     position: absolute; /* Posiciona em relação ao container pai */
+     top: 50%; /* Move até o meio verticalmente */
+     left: 200px; /* Afasta da esquerda */
+     transform: translateY(-50%); /* Centraliza verticalmente ajustando metade da altura */
+     display: flex; /* Define como flex container */
+     flex-direction: column; /* Empilha elementos verticalmente */
+     justify-content: center; /* Centraliza os itens no eixo vertical */
+     max-width: 380px; /* Limita a largura do conteúdo */
+     z-index: 1; /* Coloca acima da imagem de fundo */
+}
+
+/* Título */
+.conteudo .titulo {
+     color: #ffffff; /* Cor branca */
+     font-size: 80px; /* Tamanho do título */
+     font-weight: 400; /* Espessura da fonte normal */
+     margin-bottom: 40px; /* Espaço abaixo do título */
+}
+
+/* Descrição */
+.conteudo .descricao {
+     color: #ffffff; /* Cor branca */
+     font-family: "Rubik", sans-serif; /* Fonte Rubik (ou sans-serif padrão) */
+     font-size: 20px; /* Tamanho da fonte */
+     line-height: 24px; /* Espaçamento entre linhas */
+}
+
+.logo-imagem {
+     position: absolute;               /* Define a posição absoluta em relação ao elemento pai (.fundo-pagina1) */
+     top: 50%;                         /* Move a parte superior da div para 50% da altura da tela */
+     right: 300px;                      /* Define a distância da div para a borda direita da tela */
+     transform: translateY(-50%);      /* Move a div verticalmente para cima 50% de sua própria altura, centralizando verticalmente */
+     z-index: 1;                       /* Garante que a logo fique acima da imagem de fundo */
+}
+ 
+.logoimg {
+     width: 420px;                     /* Define a largura da imagem da logo em 120 pixels */
+     height: auto;                     /* Mantém a proporção da altura da imagem de acordo com a largura definida */
+}
+
+/* HEADER (cabeçalho fixo no topo da página) */
+header {
+     background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com transparência */
+     width: 100%; /* Ocupa 100% da largura da tela */
+     position: fixed; /* Fixa o header no topo da página */
+     top: 0; /* Alinha o header no topo */
+     padding: 20px; /* Espaçamento interno de 20px */
+     z-index: 1000; /* Coloca o header acima de todo o conteúdo */
+     display: flex; /* Ativa o flexbox */
+     align-items: center; /* Centraliza os itens verticalmente */
+     justify-content: space-between; /* Espaça os itens entre os lados */
+}
+
+/* NAVEGAÇÃO dentro do header */
+nav ul {
+     list-style: none; /* Remove os marcadores de lista */
+     display: flex; /* Deixa os itens em linha */
+     gap: 20px; /* Espaçamento entre os itens */
+}
+   
+nav ul li {
+     margin-right: 20px; /* coloca um espaço de 20px à direita de cada <li> */
+}
+    
+/* LINKS de navegação */
+nav ul li a {
+     color: white; /* Cor branca para o texto */
+     text-decoration: none; /* Remove sublinhado */
+     font-size: 18px; /* Tamanho da fonte */
+}
+   
+/* LOGO dentro do header */
+.logo img {
+     width: 50px; /* Largura da imagem da logo */
+     height: auto; /* Altura automática proporcional */
+}
+   
+footer {
+     background-color: black; /* Define a cor de fundo preta para o footer */
+     width: 100%; /* Ocupa 100% da largura da tela */
+     padding: 20px; /* Adiciona 20px de padding interno em todas as direções */
+     text-align: center; /* Centraliza o texto horizontalmente */
+     color: white; /* Define a cor do texto como branca */
+     position: relative; /* Mantém o footer no fluxo normal da página */
+     margin: 0; /* Remove margem externa */
+}
+   
+footer p {
+     color: white; /* Define a cor do texto dentro do parágrafo como branca */
+     text-align: center; /* Centraliza o texto horizontalmente */
+     font-family: "Rubik", sans-serif; /* Fonte Rubik (ou sans-serif padrão) */
+}
+   
+img {
+     max-width: 100%; /* impede que a imagem ultrapasse a largura do container */
+     height: auto; /* altura automática, proporcional à largura */
+}   
+
+footer .instagram {
+     color: white; /* Define a cor do texto como branca */
+     text-decoration: none; /* Remove o sublinhado do link */
+     font-size: 18px; /* Tamanho da fonte */
+     margin-top: 10px; /* Espaço acima do link */
+     width: 60px;                     /* Define a largura da imagem da logo em 120 pixels */
+     height: auto;                     /* Mantém a proporção da altura da imagem de acordo com a largura definida */
+     left: 20px; /* Espaço à esquerda do link */
+}
