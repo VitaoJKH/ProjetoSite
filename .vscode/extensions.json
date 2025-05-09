@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ecmel.vscode-html-css",             // Autocomplete de classes e ids no HTML com base nos CSS
+    "esbenp.prettier-vscode",            // Formatação automática de código (HTML, CSS, JS etc.)
+    "formulahendry.auto-rename-tag",     // Renomeia a tag de fechamento junto com a de abertura no HTML
+    "formulahendry.auto-close-tag",      // Fecha as tags automaticamente no HTML
+    "ritwickdey.liveserver",             // Live Server para ver seu projeto rodando no navegador em tempo real
+    "naumovs.color-highlight",           // Mostra a cor de qualquer código hexadecimal, rgb ou nome de cor no CSS
+    "PKief.material-icon-theme"          // Deixa o ícone das pastas e arquivos no VS Code mais visual e organizado
+  ]
+}
