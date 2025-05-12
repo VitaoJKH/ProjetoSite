@@ -128,17 +128,13 @@ footer p {
      color: white; /* Define a cor do texto dentro do parágrafo como branca */
      text-align: center; /* Centraliza o texto horizontalmente */
      font-family: "Rubik", sans-serif; /* Fonte Rubik (ou sans-serif padrão) */
-}
-   
-img {
-     max-width: 100%; /* impede que a imagem ultrapasse a largura do container */
-     height: auto; /* altura automática, proporcional à largura */
 }   
 
-fa-brands fa-instagram{
-     color: white; /* Define a cor do ícone como branca */
-     font-size: 24px; /* Tamanho do ícone */
+.fa-instagram {
+     color: #ffffff; /* Define a cor do ícone como branca */
+     font-size: 64px; /* Tamanho do ícone */
      text-align: center; /* Centraliza o texto horizontalmente */
+     padding: 0px 20px 15px; /* Adiciona 20px de padding interno em todas as direções */
 
 }
 
