@@ -135,12 +135,10 @@ img {
      height: auto; /* altura automática, proporcional à largura */
 }   
 
-footer .instagram {
-     color: white; /* Define a cor do texto como branca */
-     text-decoration: none; /* Remove o sublinhado do link */
-     font-size: 18px; /* Tamanho da fonte */
-     margin-top: 10px; /* Espaço acima do link */
-     width: 60px;                     /* Define a largura da imagem da logo em 120 pixels */
-     height: auto;                     /* Mantém a proporção da altura da imagem de acordo com a largura definida */
-     left: 20px; /* Espaço à esquerda do link */
+fa-brands fa-instagram{
+     color: white; /* Define a cor do ícone como branca */
+     font-size: 24px; /* Tamanho do ícone */
+     text-align: center; /* Centraliza o texto horizontalmente */
+
 }
+
