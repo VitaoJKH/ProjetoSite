@@ -128,13 +128,38 @@ footer p {
      color: white; /* Define a cor do texto dentro do parágrafo como branca */
      text-align: center; /* Centraliza o texto horizontalmente */
      font-family: "Rubik", sans-serif; /* Fonte Rubik (ou sans-serif padrão) */
-}   
+} 
+
+.footer-social-icons {
+    display: flex;              /* Ativa o Flexbox para organizar os itens filhos */
+    justify-content: center;    /* Centraliza os itens filhos (os ícones) horizontalmente */
+    gap: 20px;                  /* Define um espaçamento de 20px entre os ícones */
+    margin-bottom: 10px;        /* Adiciona um espaço de 10px abaixo do grupo de ícones */
+}
 
 .fa-instagram {
-     color: #ffffff; /* Define a cor do ícone como branca */
+     color: white; /* Define a cor do ícone como branca */
      font-size: 64px; /* Tamanho do ícone */
      text-align: center; /* Centraliza o texto horizontalmente */
      padding: 0px 20px 15px; /* Adiciona 20px de padding interno em todas as direções */
 
 }
 
+.fa-facebook {
+     color: white; /* Define a cor do ícone como branca */
+     font-size: 64px; /* Tamanho do ícone */
+     text-align: center; /* Centraliza o texto horizontalmente */
+     padding: 0px 20px 15px; /* Adiciona 20px de padding interno em todas as direções */
+}
+
+footer a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: inherit;        /* Faz o link herdar a cor do elemento pai (no caso, o footer que é branco) */
+    border: none;          /* Remove qualquer borda visível do link */
+    outline: none;         /* Remove a borda de foco azul que aparece ao clicar/tabular no link */
+}
+
+footer a:visited {
+    color: inherit;        /* Mantém a cor mesmo depois de o link ter sido visitado */
+    text-decoration: none; /* Garante que o link visitado também não fique sublinhado */
+}
